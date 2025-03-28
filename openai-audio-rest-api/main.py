@@ -254,7 +254,7 @@ class OpenAICompatibleTTSHandler(http.server.BaseHTTPRequestHandler):
         }).encode("utf-8"))
 
 
-def run_server(host="0.0.0.0", port=8000):
+def run_server(host="0.0.0.0", port=8003):
     """Run the HTTP server"""
     server_address = (host, port)
     httpd = socketserver.ThreadingTCPServer(server_address, OpenAICompatibleTTSHandler)
